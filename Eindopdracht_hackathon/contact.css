@@ -1,0 +1,168 @@
+* {  margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*GRID*/
+
+.contact_form{
+    display: grid;
+}
+
+main {
+    grid-area: m;
+    padding:20px;
+    padding-top: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+}
+
+.myform {
+    grid-column-start: 2;
+    grid-column-end: 5;
+}
+
+.myform p {
+    margin: 15px;
+}
+
+.myform p select {
+    margin-top: 10px;
+}
+
+#other {
+    margin-top: 10px;
+}
+
+h1 {
+    display: grid;
+    margin-left: 15px;
+    grid-column: 2;
+    font-size: 21px;
+    font-family: 'Josefin Sans', sans-serif;
+    padding-top: 1em;
+}
+
+input, text, textarea, option {
+    height: 40px;
+    width:100%
+}
+
+p select{
+    color: #647373;
+}
+
+#calendar {
+    color: #647373;
+}
+
+#morning, #afternoon, #all_day{
+    height: 10px;
+    width: 50%;
+    padding-bottom: 15px;
+}
+
+#form_submit {
+    height: 25px;
+    width: 80px;
+    background-color: white;
+    border: dotted;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.submit_container{
+    display: flex;
+    justify-content: center;
+}
+
+.submit_button {
+    padding-right: 15px;
+}
+
+#form_submit:hover {
+    cursor: pointer;
+    background-color: #f5d000;
+    border:solid thin;
+    font-weight: bold;
+}
+
+#textarea {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.leave_form {
+    margin-top: 15px;
+    grid-row: 4;
+    grid-column-end: 5;
+}
+
+/*MEDIA QUERIES*/
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+    body {
+        padding-left: 20px;
+        padding-right: 40px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    .myform {
+        display: grid;
+        grid-column-end: 5;
+    }
+
+    #form_submit {
+        height: 35px;
+        width: 110px;
+    }
+
+    #form_tour_date label, .radio_options, #form_age, #specify, #textarea{
+        font-size: 16px;
+    }
+
+    p input {
+        font-size: 16px;
+    }
+
+    p select{
+        font-size: 16px;
+    }
+}
+
+
+@media screen and (min-width: 1024px) {
+
+    body {
+        padding-left: 60px;
+        padding-right: 40px;
+    }
+
+    .myform {
+        display: grid;
+        grid-column-end: 4;
+    }
+
+    #form_submit {
+        height: 35px;
+        width: 110px;
+    }
+
+    #form_tour_date label, .radio_options, #form_age, #specify, #textarea{
+        font-size: 16px;
+    }
+
+    p input {
+        font-size: 16px;
+    }
+
+    p select{
+        font-size: 16px;
+    }
+
+    ::placeholder {
+        color: #647373;
+    }
+
+}

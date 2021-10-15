@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+        <title>Dutch landscape guide</title>
+        <link rel="stylesheet" href="contact.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&family=Montserrat&display=swap" rel="stylesheet">
+</head>
+
+<body class="body_form">
+  <header class="header">
+    <a href="index.html"><img class="logo" src="images/logo.png"/></a>
+    <nav class="menu"> 
+    <ul>
+    <li class="dropdown"><span>Menu &#9662;</span></li>
+        <ul class="menu_dropdown">
+            <li><a href="windmills.html">Windmills</a></li>
+            <li><a href="cities.html">Cities</a></li>
+            <li><a href="tulips.html">Tulips</a></li>
+        </ul>
+    </ul>
+    </nav> 
+<div class="contact_link"><a href="contact.html" id="contact_link">Contact</a></div>
+</header>
+
+<main>
+    <div class="contact_form">
+      <h1>Get in touch!</h1>
+      <form class="myform" name="contact" method="POST" data-netlify="true">
+          <p id="form_name">
+           <input type="text" name="name" size="30" aria-required="true" aria-invalid="false" placeholder="Name and surname*"/>
+          </p>
+          <p id="form_email">
+            <input type="email" name="email" size="30" aria-required="true" aria-invalid="false" placeholder="Email*"/>
+          </p>
+          <p id="form_phone">
+           <input type="text" name="Phone" size="30" aria-required="true" aria-invalid="false" placeholder="Phone number*"/>
+          </p>
+          <p id="form_number_of_people">
+            <input type="text" name="people" size="15" aria-required="true" aria-invalid="false" placeholder="Number of people*"/>
+          </p>
+          <p id="form_tour_date">
+            <label>Choose a tour date</label> <input id="calendar" type="date" name="tour_date">
+          </p>
+          <p name="day_range" class="radio_options">When do you want to do the tour?
+            <br>
+            <br>
+            <label for="morning"><input type="radio"  name="day_range" id="morning" value="male">Morning</label>
+            <label for="afternoon"><input type="radio" name="day_range" id="afternoon" value="female">Afternoon</label>
+            <label for="All day"><input type="radio"  name="day_range" id="all_day" value="other">All day</label>
+          </p>
+            <p id="form_age"><label>How did you hear about us?</label> <br>
+            <select name="options">    
+            <option value="0">Select one option</option>
+            <option value="search-engine"> Search Engine</option>
+            <option value="social-media"> Social media post/group</option>
+            <option value="mouth"> Word of mouth</option>
+            <option value="other">Other</option>
+            </select>
+            <p>
+            <label id="specify">If other, please specify</label>
+            <br>
+            <input type="text" name="" id="other" size="40" placeholder="Please specify*">
+            </p>
+          </p>
+          <p id="form_comments">
+            <textarea id="textarea" name="comments" placeholder="Comments"></textarea>
+          </p>
+        <div class="submit_container">
+          <div class="submit_button">
+            <button type="submit" id="form_submit">Submit</button>
+          </div>
+        </div>
+      </form>
+
+        <span class="leave_form">
+            <a class="button" href="index.html">Home page</a>
+        </span>
+      </div>
+</main>
+    
+      <footer class="footer">
+        <div class="container_footer">
+            <div class="box">Privacy policy</div>
+            <div class="box">
+                <img src="social_icons/facebook.png">
+                <img src="social_icons/instagram.png">
+                <img src="social_icons/youtube.png">
+            </div>
+            <div class="box">Street name.<br>City.Country.</div>
+        </div>
+        <div class="copyright"><p>Copyright &copy; 2021, My website Jordi PV</p></div>
+    </footer>
+</body>
+
+</html>
